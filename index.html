@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Transition Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&amp;display=swap" rel="stylesheet" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="l-container">
+      <header class="header">
+        <h1 class="header__title">View Transition Demo</h1>
+      </header>
+
+      <main id="index" aria-label="index">
+        <ul class="grid" data-cols="4">
+          <li class="grid__item">
+            <button type="button" aria-controls="detail01" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img01.webp" width="400" height="600" alt="良くないalt01" decoding="async" style="--view-name: photo-01" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail02" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img02.webp" width="400" height="600" alt="良くないalt02" decoding="async" style="--view-name: photo-02" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail03" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img03.webp" width="400" height="604" alt="良くないalt03" decoding="async" style="--view-name: photo-03" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail04" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img04.webp" width="400" height="600" alt="良くないalt04" decoding="async" style="--view-name: photo-04" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail05" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img05.webp" width="400" height="711" alt="良くないalt05" decoding="async" style="--view-name: photo-05" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail06" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img06.webp" width="480" height="600" alt="良くないalt06" decoding="async" style="--view-name: photo-06" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail07" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img07.webp" width="480" height="600" alt="良くないalt07" decoding="async" style="--view-name: photo-07" />
+            </button>
+          </li>
+          <li class="grid__item">
+            <button type="button" aria-controls="detail08" aria-expanded="false" class="thumbnail js-toggle">
+              <img src="img/img08.webp" width="480" height="600" alt="良くないalt08" decoding="async" style="--view-name: photo-08" />
+            </button>
+          </li>
+        </ul>
+      </main>
+
+      <main id="detail01" aria-label="detail01" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img01.webp" width="400" height="600" alt="良くないalt01" decoding="async" style="--view-name: photo-01" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 01</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail01" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail02" aria-label="detail02" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img02.webp" width="400" height="600" alt="良くないalt02" decoding="async" style="--view-name: photo-02" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 02</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail02" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail03" aria-label="detail03" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img03.webp" width="400" height="600" alt="良くないalt03" decoding="async" style="--view-name: photo-03" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 03</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail03" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail04" aria-label="detail04" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img04.webp" width="400" height="600" alt="良くないalt04" decoding="async" style="--view-name: photo-04" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 04</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail04" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail05" aria-label="detail05" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img05.webp" width="400" height="600" alt="良くないalt05" decoding="async" style="--view-name: photo-05" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 05</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail05" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail06" aria-label="detail06" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img06.webp" width="400" height="600" alt="良くないalt06" decoding="async" style="--view-name: photo-06" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 06</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail06" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail07" aria-label="detail07" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img07.webp" width="400" height="600" alt="良くないalt07" decoding="async" style="--view-name: photo-07" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 07</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail07" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main id="detail08" aria-label="detail08" hidden>
+        <div class="grid" data-cols="2">
+          <div class="grid__item">
+            <div class="cover">
+              <img src="../img/img08.webp" width="400" height="600" alt="良くないalt08" decoding="async" style="--view-name: photo-08" />
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="detail">
+              <h2>Osyare Room 08</h2>
+              <p>This is Osyare Room. Konna Osyarena oheyaha ni Sumitaiyone.Demo Koreha Free Sozai nanda. Unsplash no Syashin wo Tsukawasete morattanndayo. Arigataine.</p>
+              <p>
+                <button type="button" class="button js-toggle" aria-controls="detail08" aria-expanded="false">Back to Top</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p><small lang="en">© 2023 Shibata Hironori.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
